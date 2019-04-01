@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal" android:padding="0dp"
+                  android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_marginTop="16dp"
+                  android:layout_marginBottom="0dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="NEW YORK" style="@style/LocationTitle" android:textColor="@android:color/black"
+                  android:drawableBottom="@drawable/location_selected_line"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="CHICAGO" style="@style/LocationTitle"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="LONDON" style="@style/LocationTitle"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="SAN FRANCISCO" style="@style/LocationTitle"/>
+    </LinearLayout>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                 android:padding="12dp"
+                 android:background="@drawable/bg_trivia_parchment">
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content"
+                                           app:cardCornerRadius="8dp"
+                                           android:layout_gravity="center_horizontal"
+                                           android:layout_height="wrap_content">
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:background="@color/we_won_card_background"
+                          android:orientation="vertical" android:gravity="center"
+                          android:paddingEnd="12dp" android:paddingStart="12dp" android:paddingTop="8dp" android:paddingBottom="12dp">
+
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:src="@drawable/we_won_ticket_image"
+                           android:layout_gravity="center_horizontal"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="YOU'VE WON!" style="@style/TicketText" android:textColor="#FFDD8833"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/call_us_for_ticket" style="@style/TicketText"/>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/black"
+                      android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:background="#FFDD8833" android:padding="1dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/cta_call_now"
+                              android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                              android:background="@android:color/white"
+                              android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="8dp" android:paddingBottom="8dp"
+                              android:text="CALL NOW"/>
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+</LinearLayout>

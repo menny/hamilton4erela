@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <ProgressBar
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            android:id="@+id/main_waiting_spinning"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:id="@+id/root_ui" android:visibility="gone" android:gravity="fill">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:id="@+id/menu_icon"
+                   android:src="@drawable/ic_menu"
+                   android:layout_alignParentStart="true" android:layout_alignParentTop="true"
+                   android:padding="8dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  style="@style/SectionTitle"
+                  android:id="@+id/lottery_title" android:layout_marginBottom="12dp"
+                  android:layout_marginTop="4dp"
+                  android:textColor="@android:color/white"
+                  android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+                  android:text="LOTTERY"/>
+
+        <androidx.cardview.widget.CardView
+                app:cardCornerRadius="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/lottery_title">
+            <include layout="@layout/we_won_card"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</FrameLayout>

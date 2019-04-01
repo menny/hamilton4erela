@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Recorder</string>
+    <string name="call_us_for_ticket">Congratulations!\nCall Richard Rodgers Theatre box–office at\n(646) 494–4300\nwith code <b>AFPOROILLS</b>.</string>
+    <string name="lottery_app_name">Hamilton</string>
+
+    <string name="box_office_phone_number">6464944300</string>
+</resources>

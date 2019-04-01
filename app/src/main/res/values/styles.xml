@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+
+    </style>
+
+    <style name="SectionTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:color">#FFF</item>
+    </style>
+
+    <style name="LocationTitle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:color">@android:color/darker_gray</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="TicketText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:lineSpacingMultiplier">1.3</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:color">@android:color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+            app:cardCornerRadius="16dp"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:background="@android:color/white">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/title"
+                      style="@style/SectionTitle" android:layout_gravity="center_horizontal" android:padding="12dp" android:text="SETTINGS"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical" android:background="@drawable/bg_trivia_parchment">
+
+                <TimePicker android:id="@+id/prank_time" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:headerBackground="@android:color/transparent"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle" android:orientation="horizontal" android:weightSum="2">
+                    <Button style="?android:attr/buttonBarButtonStyle" android:id="@+id/set_prank_time" android:layout_width="0px" android:layout_weight="1" android:layout_height="wrap_content" android:text="Set Prank Time" android:layout_gravity="center_horizontal"/>
+                    <Button style="?android:attr/buttonBarButtonStyle" android:id="@+id/clear_prank_time" android:layout_width="0px" android:layout_weight="1" android:layout_height="wrap_content" android:text="Clear Prank Time" android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+
+                <Switch android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/show_settings_app_icon"
+                        android:text="Show Settings app icon in Apps-Drawer" android:layout_margin="12dp"/>
+
+                <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+                        android:id="@+id/launch_lottery_activity" android:text="Launch Lottery Activity"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
